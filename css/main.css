@@ -166,7 +166,7 @@ img {
         background-position: center;
     }
 
-    .hero-section__start{
+    .hero-section__start {
         width: 445px;
     }
 
@@ -185,5 +185,150 @@ img {
 /* DESKTOP RESPONSIVE END */
 
 /* HERO SECTION END */
+
+/* OUR SECTION START */
+.our-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.our-section__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.our-section__start {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 48px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.our-section__start-img{
+    width: 100%;
+    height: 100%;
+}
+
+.our-section__end {
+    text-align: center;
+}
+
+.our-section__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--main-text-color);
+}
+
+.our-section__desc {
+    margin: 0;
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--main-text-color);
+    opacity: 0.8;
+}
+
+/* OUR SECTION END */
+
+/* TABLET RESPONSIVE START */
+
+@media only screen and (min-width: 768px) {
+    .our-section {
+        padding: 72px 0;
+    }
+
+    .our-section__wrapper {
+        flex-direction: row;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .our-section__start {
+        margin: 0;
+        width: 281px;
+        height: 470px;
+    }
+
+    .our-section__end {
+        width: 339px;
+        text-align: left;
+    }
+
+    .our-section__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .our-section__desc {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+/* TABLET RESPONSIVE END */
+
+/* DESKTOP RESPONSIVE START */
+
+@media only screen and (min-width: 1024px) {
+    .our-section {
+        padding: 84px 50px;
+    }
+
+    .our-section__wrapper {
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .our-section__start {
+        margin: 0;
+        width: 445px;
+        height: 520px;
+    }
+
+    .our-section__start-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .our-section__end {
+        width: 339px;
+        text-align: left;
+    }
+
+    .our-section__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .our-section__desc {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .our-section{
+       padding-left: 135px;
+       padding-right: 135px;
+    }
+
+    .our-section__wrapper{
+        gap: 125px;
+    }
+
+    .our-section__end{
+        width: 540px;
+    }
+}
+
+/* DESKTOP RESPONSIVE END */
 
 /************ MAIN STYLES END ************/
