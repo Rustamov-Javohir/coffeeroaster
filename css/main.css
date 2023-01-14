@@ -1,12 +1,47 @@
-
-/* ROOT */
-:root{
-    /* --header-bg-color: #fff; */
-    /* --main-bg-color: #fff; */
-    /* --main-text-color: #fff; */
+/* fraunces-900 - latin */
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('../fonts/fraunces-v26-latin-900.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/fraunces-v26-latin-900.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-html{
+/* barlow-regular - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/barlow-v12-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* barlow-700 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/barlow-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/barlow-v12-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ROOT */
+:root {
+    --main-bg-color: #fff;
+    --main-text-color: #333D4B;
+    --hero-text-color: #FEFCF7;
+}
+
+html {
     box-sizing: border-box;
     height: 100%;
     scroll-behavior: smooth;
@@ -18,17 +53,17 @@ html{
     box-sizing: inherit;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin: 0;
-    font-family: "Arial", sans-serif;
-    font-weight: 400;
+    font-family: "Fraunces", 'Times New Roman', Times, serif;
+    font-weight: 900;
     background-color: #fff;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
@@ -46,7 +81,7 @@ img{
     overflow: hidden;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1240px;
     margin-right: auto;
@@ -54,4 +89,3 @@ img{
     padding-right: 20px;
     padding-left: 20px;
 }
-
