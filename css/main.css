@@ -83,9 +83,107 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1320px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 20px;
     padding-left: 20px;
 }
+
+/************ MAIN STYLES START ************/
+/* HERO SECTION START */
+
+.hero-section {
+    padding-top: 8px;
+    padding-bottom: 60px;
+}
+
+.hero-section__wrapper {
+    padding: 111px 24px 87px 24px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    background-image: url("../images/hero-bg-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 28px;
+    color: var(--hero-text-color);
+}
+
+.hero-section__desc {
+    margin: 0;
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--hero-text-color);
+    opacity: 0.8;
+}
+
+
+/* TABLET RESPONSIVE START */
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        padding-top: 13px;
+        padding-bottom: 72px;
+    }
+
+    .hero-section__wrapper {
+        padding: 118px 58px;
+        text-align: left;
+        background-position: -70px 0;
+    }
+
+    .hero-section__start {
+        width: 398px;
+    }
+
+    .hero-section__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+}
+
+/* TABLET RESPONSIVE END */
+
+/* DESKTOP RESPONSIVE START */
+@media only screen and (min-width: 1024px) {
+    .hero-section {
+        padding-bottom: 72px;
+    }
+
+    .hero-section__wrapper {
+        padding: 137px 85px;
+        text-align: left;
+        background-position: center;
+    }
+
+    .hero-section__start{
+        width: 445px;
+    }
+
+    .hero-section__title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .hero-section__desc {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+}
+
+/* DESKTOP RESPONSIVE END */
+
+/* HERO SECTION END */
+
+/************ MAIN STYLES END ************/
