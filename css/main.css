@@ -90,6 +90,13 @@ img {
     padding-left: 20px;
 }
 
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 /****************** HEADER STYLES START *****************/
 .site-header {
     padding-top: 43px;
