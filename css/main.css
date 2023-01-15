@@ -90,6 +90,115 @@ img {
     padding-left: 20px;
 }
 
+/****************** HEADER STYLES START *****************/
+.site-header {
+    padding-top: 43px;
+    padding-bottom: 43px;
+    background-color: var(--header-bg-color);
+}
+
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__logo--img {
+    width: 236px;
+    height: 26px;
+}
+
+.sitenav__list {
+    display: flex;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 33px;
+}
+
+.sitenav__link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    color: #83888F;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.hidden-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 85px;
+    padding-top: 40px;
+    text-align: center;
+    background: linear-gradient(to top, #fefcf781 0%, #FEFCF7 55.94%);
+    transform: translateY(-150%);
+    transition: transform 1s ease;
+}
+
+.hidden-header.shownav {
+    transform: translateY(0%);
+}
+
+.hiddennav__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.hiddennav__link {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--main-text-color);
+}
+
+/******************* HEADER TABLET STYLES START ******************/
+@media only screen and (max-width: 768px) {
+    .site-header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .site-header__logo--img {
+        width: 235px;
+        height: 25px;
+    }
+}
+
+/******************* HEADER TABLET STYLES END ******************/
+
+/******************* HEADER MOBILE STYLES START ******************/
+@media only screen and (max-width: 600px) {
+    .site-header {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .site-header__logo--img {
+        width: 162px;
+        height: 17px;
+    }
+
+    .sitenav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+/******************* HEADER MOBILE STYLES END ******************/
+
+/****************** HEADER STYLES END *****************/
+
 /************ MAIN STYLES START ************/
 /* HERO SECTION START */
 
@@ -207,7 +316,7 @@ img {
     overflow: hidden;
 }
 
-.our-section__start-img{
+.our-section__start-img {
     width: 100%;
     height: 100%;
 }
@@ -315,16 +424,16 @@ img {
 
 
 @media only screen and (min-width: 1440px) {
-    .our-section{
-       padding-left: 135px;
-       padding-right: 135px;
+    .our-section {
+        padding-left: 135px;
+        padding-right: 135px;
     }
 
-    .our-section__wrapper{
+    .our-section__wrapper {
         gap: 125px;
     }
 
-    .our-section__end{
+    .our-section__end {
         width: 540px;
     }
 }
